@@ -78,7 +78,7 @@ resource "datadog_timeboard" "api" {
 }
 
 module "monitor_latency_p95" {
-  source  = "github.com/traveloka/terraform-datadog-monitor"
+  source  = "github.com/traveloka/terraform-datadog-monitor?ref=v0.1.8"
   enabled = "${local.monitor_enabled}"
 
   product_domain = "${var.product_domain}"
@@ -105,7 +105,7 @@ module "monitor_latency_p95" {
 }
 
 module "monitor_exception" {
-  source  = "github.com/traveloka/terraform-datadog-monitor"
+  source  = "github.com/traveloka/terraform-datadog-monitor?ref=v0.1.8"
   enabled = "${local.monitor_enabled}"
 
   product_domain = "${var.product_domain}"
