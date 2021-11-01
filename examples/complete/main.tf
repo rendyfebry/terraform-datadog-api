@@ -4,12 +4,16 @@ locals {
   environment    = "production"
 }
 
+provider "datadog" {
+  version = "~> 3.0"
+}
+
 module "api" {
   source         = "../../"
-  product_domain = "${local.product_domain}"
+  product_domain = local.product_domain
   service        = "beical"
-  cluster        = "${local.cluster}"
-  environment    = "${local.production}"
+  cluster        = local.cluster
+  environment    = local.environment
   tags           = ["tag1", "tag2"]
 
   recipients         = ["bei@traveloka.com"]

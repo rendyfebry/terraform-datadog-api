@@ -1,9 +1,7 @@
 terraform-datadog-api
 =================
 
-Terraform module for Datadog API.
-
-
+Terraform module for creating Datadog API dashboard and monitor.
 
 Usage
 -----
@@ -13,8 +11,8 @@ Usage
 Terraform Version
 -----------------
 
-This module was created using Terraform 0.11.7. 
-So to be more safe, Terraform version 0.11.7 or newer is required to use this module.
+This module was created using Terraform 0.12.31. 
+So to be more safe, Terraform version 0.12.31 or newer is required to use this module.
 
 Authors
 -------
